@@ -1,0 +1,62 @@
+<html>
+            <style>
+                body{
+                    background-image: url('rm383-14.jpg');
+                    background-size: 100%; 
+                }
+                form{
+                    width: 30%;
+                    height: 50%;
+                    position: absolute;
+                    top: 5%;
+                    left: 30%;
+                    border-radius: 50px;
+                    border-width: 100%;
+                    border-color: aqua;
+                }
+                button:hover{
+                    background-color: blueviolet;
+                    border-radius: 50px;
+                }
+                input{
+                    font-size: 20;
+                   
+                }
+                button{
+                    font-size: 25px;
+                    background-color: whitesmoke;
+                    border-radius: 50px;
+                    border-width: 10px;
+                    border-color: chartreuse;
+                }
+                select{
+                    font-size: 20px;
+                    width: 50%;
+                    background-color: aqua;
+                    border-radius: 10px;
+                }
+                h2{
+                    left: 50%;
+                    color: azure;
+                }
+            </style>
+            <body>
+                    <form action="NewServlet4" method="post">
+                        <h2>Login Email: </h2>
+                            <center><input type="email" name="email" placeholder="Enter ur subscription mail"><br></center>
+                        <h2>Card Name: </h2> <center><input type="text" name="cardname" placeholder="Name on Card"><br></center>
+                        <h2>Card Number: </h2><center><input type="text" name="cardno" placeholder="Enter Card Number"><br></center>
+                        <h2>Subscription Type: </h2>
+                        <center>
+                        <select name="typesub" id="sub">
+                            <option value="14$" name="silver">14$ Silver</option>
+                            <option value="16$" name="gold">16$ Gold Premium</option>
+                        </select>
+                        </center>
+                        <br>
+                        <center>
+                            <button title="Hover me">Subscribe</button>
+                        </center>
+                    </form>
+            </body>
+        </html>

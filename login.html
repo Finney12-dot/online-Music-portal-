@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HUNGRY</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("login2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("pro.jpeg");
+
+  min-height: 480px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  color:yellowgreen;
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 30px;
+  
+  text-align: left;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+text-align: left;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color:#ddd;
+  outline: none;
+text-align: left;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: limegreen;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+  text-align: left;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+      
+<div class="bg-img">
+    <form class="container" action="NewServlet1" method="post">
+      <h1 style="font-size:30px;color:white;"><b>E.D.I.T.H</b></h1>
+
+    <b><label for="email"><b><p style="text-align:left;font-size:13px;color:yellowgreen;">Email</p></b></label></b>
+    <b><input type="text" placeholder="Enter Email" id="email" name="email" required></b>
+    <b><label for="psw"><b><p style="text-align:left;font-size:13px;color:yellowgreen;">Password</p></b></label></b>
+    <b><input type="password" placeholder="Enter Password" id="pass" name="pass" required></b>
+    <button type="submit" class="btn" id="submit" style="color: white; text-decoration: none; padding: auto; text-align: center;">LOGIN</button>
+<br>
+<br>
+<button class="btn"><a href="reg.html" id="submit" style="color: white; text-decoration: none; padding: auto; text-align: center;">REGISTER</a></button>
+  </form>
+</div>
+</body>
+</html>

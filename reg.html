@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>
+            registerationform
+        </title>
+        <style>
+            body{
+                background-image: url("img.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            input[type=text], input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+            text-align: left;
+            }
+            .box{
+                background-color: white;
+                width: 30%;
+                 height: 75%;
+                opacity: 0.9;
+                padding:55px;
+                
+            }
+            .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+  text-align: left;
+}
+
+        </style>
+        <script>
+            function valid() {
+                let x = document.forms["Form"]["fname"].value;
+                if (x == "") {
+                    alert("First Name must be filled out");
+                    return false;
+                }
+                let y = document.forms["Form"]["lname"].value;
+                if (y == "") {
+                    alert("Last Name must be filled out");
+                    return false;
+                }
+                let z = document.forms["Form"]["pass"].value;
+                if (z == ""){
+                    alert("Password must be filled out");
+                    return false;
+                }
+		if(z.length<8 || z.length>16){
+		    alert("Password should contain 8-16 characters");
+		}
+                let m = document.forms["Form"]["mob"].value;
+                if (m == ""){
+                    alert("Mobile Number must be filled out");
+                    return false;
+                }
+		if(m.length !=10){
+		    alert("Invalid Mobile Number");
+		}
+            }
+        </script>
+        
+    </head>
+    <body>
+    <center>
+        <p style="text-align:center;font-size:50px;color:white;">E.D.I.T.H.!</p>
+        <div color:"white" class="box">
+            <form name="Form"  onsubmit="return valid()" action="NewServlet2" method="post" >
+               
+                <p style="text-align:left">FIRST NAME:</p><input type="text" placeholder="Enter FIRST NAME" id="fname" name="fname">
+                <p style="text-align:left">LAST NAME:</p><input type="text" placeholder="Enter LAST NAME" id="lname" name="lname">
+                <p style="text-align:left">E-MAIL ID:</p><input type="text" placeholder="Enter EMAIL-Id" id="email" name="email">
+                <p style="text-align:left">PASSWORD:</p><input type="password" placeholder="Enter PASSWORD" id="pass" name="pass">
+                <p style="text-align:left">MOBILE NUMBER</p><input type="text" placeholder="Enter MOBILE NUMBER" id="mob" name="mob" >
+                <button type="submit" class="btn" id="submit" style="color: white; text-decoration: none; padding: auto; text-align: center;">SUBMIT</button>
+            </form> 
+        </div>
+    </center>
+    </body>
+</html>
